@@ -70,30 +70,8 @@ The workflow includes:
 
 If you've saved the trained model as `model.pkl` or `model.joblib`, you can load and use it like this:
 
-### Example with `joblib`:
-
+### Example with `pickle`:
 ```python
-import joblib
-import numpy as np
-
-# Load the saved model
-model = joblib.load('models/model.joblib')
-
-# Example input: array with shape (1, number_of_features)
-sample_input = np.array([[63, 1, 3, 145, 233, 1, 0, 150, 0, 2.3, 0]])  # example values
-
-# Make prediction
-prediction = model.predict(sample_input)
-
-# Interpret prediction
-if prediction[0] == 1:
-    print("Prediction: High risk of heart disease")
-else:
-    print("Prediction: Low risk of heart disease")
-
-
-
-
 import pickle
 import numpy as np
 
@@ -112,3 +90,4 @@ if prediction[0] == 1:
     print("Prediction: High risk of heart disease")
 else:
     print("Prediction: Low risk of heart disease")
+```
