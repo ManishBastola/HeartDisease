@@ -33,14 +33,11 @@ The workflow includes:
 ## Models Used
 
 - Logistic Regression  
-- Random Forest Classifier  
-- *(Add other models here if used, e.g. XGBoost)*
 
 ## Evaluation Metrics
 
 - Accuracy  
 - F1-Score  
-- *(Add others if used: ROC-AUC, Precision, Recall, etc.)*
 
 ## Project Structure
 
@@ -68,7 +65,7 @@ The workflow includes:
 
 ## How to Load the Model and Use It
 
-If you've saved the trained model as `model.pkl` or `model.joblib`, you can load and use it like this:
+If you've saved the trained model as `model.pkl`, you can load and use it like this:
 
 ### Example with `pickle`:
 ```python
